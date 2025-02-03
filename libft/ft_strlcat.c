@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: cortiz <cortiz@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 14:22:17 by cortiz            #+#    #+#             */
-/*   Updated: 2022/10/14 13:35:00 by cortiz           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t destsize)
@@ -32,12 +20,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t destsize)
 	dst[c] = '\0';
 	return (ft_strlen(dst) + ft_strlen(&src[d]));
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-	char a[10] = "mfdtjyomo";
-	printf("%lu\n", ft_strlcat(a,"lorem ipsum dolor sit amet", 0));
-	printf("%lu\n", strlcat(a,"lorem ipsum dolor sit amet", 0));
-}*/

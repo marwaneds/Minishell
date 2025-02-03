@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: cortiz <cortiz@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 18:26:13 by cortiz            #+#    #+#             */
-/*   Updated: 2022/10/13 11:18:31 by cortiz           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
@@ -31,14 +19,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return (0);
 	return (sb1[i] - sb2[i]);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-int main()
-{
-	char a[] = "test\200";
-	char b[] = "test\0";
-	printf("%d\n", ft_strncmp(a, b, 6));
-	printf("%d\n", strncmp(a, b, 6));
-}
-*/

@@ -1,25 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_error.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mel-faqu <mel-faqu@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/17 08:42:22 by mel-faqu          #+#    #+#             */
-/*   Updated: 2023/07/17 08:42:23 by mel-faqu         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "minishell.h"
 
-/**
- * @brief 
- * Finds corresponding error and frees args;
- * @param error 
- * Number of related error:
- * 0 = If there is no string following a redirection or a pipe.
- * @param data 
- */
 int	ft_error(int error, t_data *data)
 {
 	ft_putstr_fd("minishell: ", STDERR_FILENO);
