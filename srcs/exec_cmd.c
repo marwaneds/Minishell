@@ -45,9 +45,7 @@ void	handle_cmd(t_cmds *cmd, t_data *data)
 			exit(exit_code);
 		}
 		else if (cmd->str[0][0] != '\0')
-		{
 			exit_code = find_cmd(cmd, data);
-		}
 	}
 	exit(exit_code);
 }

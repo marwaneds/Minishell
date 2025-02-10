@@ -19,9 +19,7 @@ bool	is_between_single(char *str, char c)
 		if (str[i] == '\"')
 			skip_quotes(&i, str, '\"');
 		if (str[i] == '\'')
-		{
 			is_between = !is_between;
-		}
 		else if (str[i] == c && is_between)
 			return (false);
 		i++;

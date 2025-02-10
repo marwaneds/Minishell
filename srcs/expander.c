@@ -86,9 +86,7 @@ char	**expander(t_data *data, char **str)
 			str[i] = tmp;
 		}
 		if (ft_strncmp(str[0], "export", ft_strlen(str[0]) - 1) != 0)
-		{
 			loop_through_str(str[i]);
-		}
 		i++;
 	}
 	return (str);
