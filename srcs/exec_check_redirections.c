@@ -62,15 +62,21 @@ int	check_redirections(t_cmds *cmd)
 	while (cmd->redirections)
 	{
 		if (cmd->redirections->token == LESS)
+		{
 			if (handle_infile(cmd->redirections->str))
 				return (EXIT_FAILURE);
+		}
 		else if (cmd->redirections->token == GREAT
 			|| cmd->redirections->token == GREAT_GREAT)
+		{
 			if (handle_outfile(cmd->redirections))
 				return (EXIT_FAILURE);
+		}
 		else if (cmd->redirections->token == LESS_LESS)
+		{
 			if (handle_infile(cmd->hd_file_name))
 				return (EXIT_FAILURE);
+		}
 		cmd->redirections = cmd->redirections->next;
 	}
 	cmd->redirections = start;
